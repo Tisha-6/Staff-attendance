@@ -1,3 +1,115 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
 body {
-    background-color: #f8f9fa;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Card */
+.container {
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.8s ease;
+}
+
+/* Heading */
+h2 {
+    font-weight: 600;
+    text-align: center;
+    color: #ff6b35;
+    margin-bottom: 20px;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.3);
+}
+
+/* Buttons */
+.btn-success {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
+}
+
+.btn-primary {
+    background: transparent;
+    color: #ff6b35;
+    border: 2px solid #ff6b35;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #ff6b35;
+    color: #fff;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th {
+    background: #ff6b35;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Back Button */
+.btn-secondary {
+    background: #343a40;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
